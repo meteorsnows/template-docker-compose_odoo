@@ -7,8 +7,6 @@ services:
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
-    networks:
-      - default
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
@@ -19,7 +17,3 @@ services:
 volumes:
   data:
 
-networks:
-  default:
-    name: myapp_default
-    external: true
