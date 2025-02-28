@@ -3,5 +3,5 @@ tasks:
       docker-compose up
 
 ports:
-  - port: 900
+  - port: 9443
     onOpen: open-browser
